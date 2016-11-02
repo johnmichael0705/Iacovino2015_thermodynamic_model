@@ -92,13 +92,6 @@
 			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
 			remoteInfo = CorePlot;
 		};
-		C67DB2651AEC5B680063D933 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67DB2491AEC5B670063D933 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C67DB2501AEC5B670063D933;
-			remoteInfo = Kayla;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -336,7 +329,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C67DB2661AEC5B680063D933 /* PBXTargetDependency */,
 			);
 			name = IacovinoTests;
 			productName = KaylaTests;
@@ -501,11 +493,6 @@
 			isa = PBXTargetDependency;
 			name = CorePlot;
 			targetProxy = C67CCFFB1B006CB400D89F67 /* PBXContainerItemProxy */;
-		};
-		C67DB2661AEC5B680063D933 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C67DB2501AEC5B670063D933 /* Iacovino */;
-			targetProxy = C67DB2651AEC5B680063D933 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
