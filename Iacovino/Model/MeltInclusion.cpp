@@ -724,7 +724,14 @@ BasaniteMeltInclusion::BasaniteMeltInclusion(const MonteCarlo::ValueListT& inInp
 void
 BasaniteMeltInclusion::calcComposition()
 {
+	//	This will compute a value for mXCO2 that
+	//	is a user input to the Basanite model, so
+	//	save that off first, then restore it when
+	//	we’re done computing the base class compositions…
+	
+	double saveXCO2 = mXCO2;
 	MeltInclusion::calcComposition();
+	mXCO2 = saveXCO2;
 	
 	//	Common calculations on inputs…
 	
