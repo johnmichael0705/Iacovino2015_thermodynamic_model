@@ -6,8 +6,11 @@
 //  Copyright (c) 2015 Latency: Zero. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-	return NSApplicationMain(argc, argv);
+int
+main(int argc, const char * argv[])
+{
+	printf("Nothing in this simplified app; use Xcode tests, instead\n");
+	return 0;
 }

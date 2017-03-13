@@ -14,7 +14,6 @@
 #import "Histogram.h"
 #import "MonteCarlo.h"
 
-#import "CharacterizeMeltInclusion.h"
 #import "CharacterizationContext.h"
 #import "MeltInclusion.h"
 #import "SensitivityContext.h"
