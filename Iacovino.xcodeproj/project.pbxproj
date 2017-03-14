@@ -9,24 +9,16 @@
 /* Begin PBXBuildFile section */
 		C623E2951B05C36400B97F77 /* CharacterizationContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C623E2931B05C36400B97F77 /* CharacterizationContext.cpp */; };
 		C623E2961B05C36400B97F77 /* CharacterizationContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C623E2931B05C36400B97F77 /* CharacterizationContext.cpp */; };
-		C623E2A11B07164D00B97F77 /* HistogramView.mm in Sources */ = {isa = PBXBuildFile; fileRef = C623E2A01B07164D00B97F77 /* HistogramView.mm */; };
 		C661E1E71AF9D85C0032C009 /* SearchMix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C661E1E51AF9D85C0032C009 /* SearchMix.cpp */; };
 		C661E1E81AF9D85C0032C009 /* SearchMix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C661E1E51AF9D85C0032C009 /* SearchMix.cpp */; };
 		C67CCF531AFC8C9200D89F67 /* test_iter.c in Sources */ = {isa = PBXBuildFile; fileRef = C67CCF521AFC8C9200D89F67 /* test_iter.c */; };
 		C67CCF541AFC8C9200D89F67 /* test_iter.c in Sources */ = {isa = PBXBuildFile; fileRef = C67CCF521AFC8C9200D89F67 /* test_iter.c */; };
-		C67CCF871AFF078F00D89F67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67CCF861AFF078F00D89F67 /* Main.storyboard */; };
-		C67CCF8B1AFF083700D89F67 /* FugacityCalculator.mm in Sources */ = {isa = PBXBuildFile; fileRef = C67CCF891AFF083700D89F67 /* FugacityCalculator.mm */; };
-		C67CCF901AFF0B0800D89F67 /* CharacterizeMeltInclusion.mm in Sources */ = {isa = PBXBuildFile; fileRef = C67CCF8E1AFF0B0800D89F67 /* CharacterizeMeltInclusion.mm */; };
 		C67CCFBF1AFFD72400D89F67 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67CCFBD1AFFD72400D89F67 /* MonteCarlo.cpp */; };
 		C67CCFC01AFFD72400D89F67 /* MonteCarlo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67CCFBD1AFFD72400D89F67 /* MonteCarlo.cpp */; };
 		C67CCFC21AFFD91F00D89F67 /* TestMonteCarlo.mm in Sources */ = {isa = PBXBuildFile; fileRef = C67CCFC11AFFD91F00D89F67 /* TestMonteCarlo.mm */; };
 		C67CCFC51B004E4000D89F67 /* Histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67CCFC31B004E4000D89F67 /* Histogram.cpp */; };
 		C67CCFC61B004E4000D89F67 /* Histogram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67CCFC31B004E4000D89F67 /* Histogram.cpp */; };
-		C67CCFF91B006CB400D89F67 /* CorePlot.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67CCFEF1B006C4D00D89F67 /* CorePlot.framework */; };
-		C67CCFFA1B006CB400D89F67 /* CorePlot.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67CCFEF1B006C4D00D89F67 /* CorePlot.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C67DB2581AEC5B670063D933 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = C67DB2571AEC5B670063D933 /* AppDelegate.mm */; };
 		C67DB25A1AEC5B670063D933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C67DB2591AEC5B670063D933 /* main.m */; };
-		C67DB25C1AEC5B670063D933 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67DB25B1AEC5B670063D933 /* Images.xcassets */; };
 		C67DB26B1AEC5B680063D933 /* KaylaTests.mm in Sources */ = {isa = PBXBuildFile; fileRef = C67DB26A1AEC5B680063D933 /* KaylaTests.mm */; };
 		C67DB2771AEC5BBC0063D933 /* RedlichKwong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67DB2751AEC5BBC0063D933 /* RedlichKwong.cpp */; };
 		C67DB2781AEC696B0063D933 /* RedlichKwong.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67DB2751AEC5BBC0063D933 /* RedlichKwong.cpp */; };
@@ -38,61 +30,7 @@
 		C67DB2861AEC82FC0063D933 /* MeltInclusion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C67DB2831AEC82FC0063D933 /* MeltInclusion.cpp */; };
 		C6A299351B0D762300546A2B /* SensitivityContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6A299331B0D762300546A2B /* SensitivityContext.cpp */; };
 		C6A2993E1B0D793F00546A2B /* SensitivityContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C6A299331B0D762300546A2B /* SensitivityContext.cpp */; };
-		C6A299411B12E50B00546A2B /* SensitivityAnalysisController.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6A299401B12E50B00546A2B /* SensitivityAnalysisController.mm */; };
-		C6A299441B12F10700546A2B /* Region.mm in Sources */ = {isa = PBXBuildFile; fileRef = C6A299431B12F10700546A2B /* Region.mm */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		A48EB3181B01A9FC003B3122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C38A09781A46185200D45436;
-			remoteInfo = CorePlot_iOS;
-		};
-		A48EB31A1B01A9FC003B3122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C38A09821A46185300D45436;
-			remoteInfo = CorePlot_iOSTests;
-		};
-		A48EB31C1B01A9FC003B3122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C38A09BA1A4619A900D45436;
-			remoteInfo = "CorePlot-CocoaTouch";
-		};
-		A48EB31E1B01A9FC003B3122 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C38A09C41A4619A900D45436;
-			remoteInfo = "CorePlot-CocoaTouchTests";
-		};
-		C67CCFEE1B006C4D00D89F67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = CorePlot;
-		};
-		C67CCFF01B006C4D00D89F67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 0730F600109492D800E95162;
-			remoteInfo = UnitTests;
-		};
-		C67CCFFB1B006CB400D89F67 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8DC2EF4F0486A6940098B216;
-			remoteInfo = CorePlot;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		C67CCFFD1B006CB400D89F67 /* Embed Frameworks */ = {
@@ -101,7 +39,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C67CCFFA1B006CB400D89F67 /* CorePlot.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,28 +48,16 @@
 /* Begin PBXFileReference section */
 		C623E2931B05C36400B97F77 /* CharacterizationContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CharacterizationContext.cpp; sourceTree = "<group>"; };
 		C623E2941B05C36400B97F77 /* CharacterizationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterizationContext.h; sourceTree = "<group>"; };
-		C623E29F1B07164D00B97F77 /* HistogramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistogramView.h; sourceTree = "<group>"; };
-		C623E2A01B07164D00B97F77 /* HistogramView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HistogramView.mm; sourceTree = "<group>"; };
 		C661E1E51AF9D85C0032C009 /* SearchMix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SearchMix.cpp; sourceTree = "<group>"; };
 		C661E1E61AF9D85C0032C009 /* SearchMix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchMix.h; sourceTree = "<group>"; };
 		C67CCF521AFC8C9200D89F67 /* test_iter.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = test_iter.c; sourceTree = "<group>"; };
-		C67CCF861AFF078F00D89F67 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C67CCF881AFF083700D89F67 /* FugacityCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FugacityCalculator.h; sourceTree = "<group>"; };
-		C67CCF891AFF083700D89F67 /* FugacityCalculator.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FugacityCalculator.mm; sourceTree = "<group>"; };
-		C67CCF8D1AFF0B0800D89F67 /* CharacterizeMeltInclusion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterizeMeltInclusion.h; sourceTree = "<group>"; };
-		C67CCF8E1AFF0B0800D89F67 /* CharacterizeMeltInclusion.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CharacterizeMeltInclusion.mm; sourceTree = "<group>"; };
 		C67CCFBD1AFFD72400D89F67 /* MonteCarlo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MonteCarlo.cpp; sourceTree = "<group>"; };
 		C67CCFBE1AFFD72400D89F67 /* MonteCarlo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonteCarlo.h; sourceTree = "<group>"; };
 		C67CCFC11AFFD91F00D89F67 /* TestMonteCarlo.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TestMonteCarlo.mm; sourceTree = "<group>"; };
 		C67CCFC31B004E4000D89F67 /* Histogram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Histogram.cpp; sourceTree = "<group>"; };
 		C67CCFC41B004E4000D89F67 /* Histogram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Histogram.h; sourceTree = "<group>"; };
-		C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CorePlot.xcodeproj; path = "lib/core-plot/framework/CorePlot.xcodeproj"; sourceTree = "<group>"; };
 		C67DB2511AEC5B670063D933 /* Iacovino.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Iacovino.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C67DB2551AEC5B670063D933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C67DB2561AEC5B670063D933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C67DB2571AEC5B670063D933 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		C67DB2591AEC5B670063D933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C67DB25B1AEC5B670063D933 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C67DB2641AEC5B680063D933 /* IacovinoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IacovinoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67DB2691AEC5B680063D933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C67DB26A1AEC5B680063D933 /* KaylaTests.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = KaylaTests.mm; sourceTree = "<group>"; wrapsLines = 0; };
@@ -146,10 +71,6 @@
 		C67DB2841AEC82FC0063D933 /* MeltInclusion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeltInclusion.h; sourceTree = "<group>"; };
 		C6A299331B0D762300546A2B /* SensitivityContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SensitivityContext.cpp; sourceTree = "<group>"; };
 		C6A299341B0D762300546A2B /* SensitivityContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensitivityContext.h; sourceTree = "<group>"; };
-		C6A2993F1B12E50B00546A2B /* SensitivityAnalysisController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensitivityAnalysisController.h; sourceTree = "<group>"; };
-		C6A299401B12E50B00546A2B /* SensitivityAnalysisController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SensitivityAnalysisController.mm; sourceTree = "<group>"; };
-		C6A299421B12F10700546A2B /* Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Region.h; sourceTree = "<group>"; };
-		C6A299431B12F10700546A2B /* Region.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Region.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C67CCFF91B006CB400D89F67 /* CorePlot.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,24 +91,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C67CCFE91B006C4D00D89F67 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C67CCFEF1B006C4D00D89F67 /* CorePlot.framework */,
-				C67CCFF11B006C4D00D89F67 /* UnitTests.xctest */,
-				A48EB3191B01A9FC003B3122 /* CorePlot_iOS.framework */,
-				A48EB31B1B01A9FC003B3122 /* CorePlot_iOSTests.xctest */,
-				A48EB31D1B01A9FC003B3122 /* libCorePlot-CocoaTouch.a */,
-				A48EB31F1B01A9FC003B3122 /* CorePlot-CocoaTouchTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		C67DB2481AEC5B670063D933 = {
 			isa = PBXGroup;
 			children = (
 				C67DB2531AEC5B670063D933 /* Iacovino */,
-				C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */,
 				C67DB2671AEC5B680063D933 /* KaylaTests */,
 				C67DB2521AEC5B670063D933 /* Products */,
 			);
@@ -206,22 +112,8 @@
 		C67DB2531AEC5B670063D933 /* Iacovino */ = {
 			isa = PBXGroup;
 			children = (
-				C67DB2561AEC5B670063D933 /* AppDelegate.h */,
-				C67DB2571AEC5B670063D933 /* AppDelegate.mm */,
-				C67DB25B1AEC5B670063D933 /* Images.xcassets */,
-				C67CCF861AFF078F00D89F67 /* Main.storyboard */,
-				C67CCF881AFF083700D89F67 /* FugacityCalculator.h */,
-				C67CCF891AFF083700D89F67 /* FugacityCalculator.mm */,
-				C623E29F1B07164D00B97F77 /* HistogramView.h */,
-				C623E2A01B07164D00B97F77 /* HistogramView.mm */,
-				C67CCF8D1AFF0B0800D89F67 /* CharacterizeMeltInclusion.h */,
-				C67CCF8E1AFF0B0800D89F67 /* CharacterizeMeltInclusion.mm */,
 				C623E2941B05C36400B97F77 /* CharacterizationContext.h */,
 				C623E2931B05C36400B97F77 /* CharacterizationContext.cpp */,
-				C6A2993F1B12E50B00546A2B /* SensitivityAnalysisController.h */,
-				C6A299401B12E50B00546A2B /* SensitivityAnalysisController.mm */,
-				C6A299421B12F10700546A2B /* Region.h */,
-				C6A299431B12F10700546A2B /* Region.mm */,
 				C6A299341B0D762300546A2B /* SensitivityContext.h */,
 				C6A299331B0D762300546A2B /* SensitivityContext.cpp */,
 				C67CCFBE1AFFD72400D89F67 /* MonteCarlo.h */,
@@ -240,7 +132,6 @@
 		C67DB2541AEC5B670063D933 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C67DB2551AEC5B670063D933 /* Info.plist */,
 				C67DB2591AEC5B670063D933 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -311,7 +202,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				C67CCFFC1B006CB400D89F67 /* PBXTargetDependency */,
 			);
 			name = Iacovino;
 			productName = Kayla;
@@ -364,12 +254,6 @@
 			mainGroup = C67DB2481AEC5B670063D933;
 			productRefGroup = C67DB2521AEC5B670063D933 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = C67CCFE91B006C4D00D89F67 /* Products */;
-					ProjectRef = C67CCFE81B006C4D00D89F67 /* CorePlot.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				C67DB2501AEC5B670063D933 /* Iacovino */,
@@ -378,58 +262,11 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		A48EB3191B01A9FC003B3122 /* CorePlot_iOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CorePlot_iOS.framework;
-			remoteRef = A48EB3181B01A9FC003B3122 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A48EB31B1B01A9FC003B3122 /* CorePlot_iOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = CorePlot_iOSTests.xctest;
-			remoteRef = A48EB31A1B01A9FC003B3122 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A48EB31D1B01A9FC003B3122 /* libCorePlot-CocoaTouch.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = "libCorePlot-CocoaTouch.a";
-			remoteRef = A48EB31C1B01A9FC003B3122 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		A48EB31F1B01A9FC003B3122 /* CorePlot-CocoaTouchTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "CorePlot-CocoaTouchTests.xctest";
-			remoteRef = A48EB31E1B01A9FC003B3122 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C67CCFEF1B006C4D00D89F67 /* CorePlot.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CorePlot.framework;
-			remoteRef = C67CCFEE1B006C4D00D89F67 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		C67CCFF11B006C4D00D89F67 /* UnitTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = UnitTests.xctest;
-			remoteRef = C67CCFF01B006C4D00D89F67 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		C67DB24F1AEC5B670063D933 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C67CCF871AFF078F00D89F67 /* Main.storyboard in Resources */,
-				C67DB25C1AEC5B670063D933 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,22 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6A299441B12F10700546A2B /* Region.mm in Sources */,
 				C67CCFC51B004E4000D89F67 /* Histogram.cpp in Sources */,
 				C67DB25A1AEC5B670063D933 /* main.m in Sources */,
-				C67CCF901AFF0B0800D89F67 /* CharacterizeMeltInclusion.mm in Sources */,
 				C661E1E71AF9D85C0032C009 /* SearchMix.cpp in Sources */,
 				C6A299351B0D762300546A2B /* SensitivityContext.cpp in Sources */,
 				C67CCFBF1AFFD72400D89F67 /* MonteCarlo.cpp in Sources */,
 				C67DB27C1AEC764F0063D933 /* EquilibriumConstantOfFormation.cpp in Sources */,
 				C67DB2811AEC82EF0063D933 /* Model.cpp in Sources */,
-				C67DB2581AEC5B670063D933 /* AppDelegate.mm in Sources */,
 				C67DB2851AEC82FC0063D933 /* MeltInclusion.cpp in Sources */,
 				C67DB2771AEC5BBC0063D933 /* RedlichKwong.cpp in Sources */,
 				C623E2951B05C36400B97F77 /* CharacterizationContext.cpp in Sources */,
-				C623E2A11B07164D00B97F77 /* HistogramView.mm in Sources */,
-				C6A299411B12E50B00546A2B /* SensitivityAnalysisController.mm in Sources */,
-				C67CCF8B1AFF083700D89F67 /* FugacityCalculator.mm in Sources */,
 				C67CCF531AFC8C9200D89F67 /* test_iter.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,14 +318,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C67CCFFC1B006CB400D89F67 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = CorePlot;
-			targetProxy = C67CCFFB1B006CB400D89F67 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		C67DB26C1AEC5B680063D933 /* Debug */ = {
