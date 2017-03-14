@@ -61,11 +61,12 @@ private:
 	double				mWPSTotal;
 };
 
+//  Fractionation factors (user can edit these -- they should eventually be changed to not be constants, as these values will depend on user data)
+const double	kBasFrac				=	0.46;
+const double	kTephFrac				=	0.46;
+const double	kPhonFrac				=	0.46;
 
-const double	kBasFrac				=	0.35;
-const double	kTephFrac				=	0.68;
-const double	kPhonFrac				=	1.0;
-
+//  Molecular weights of species of interest. Do not change.
 const double	kMolWtCO				=	28.0101;
 const double	kMolWtCO2				=	44.0095;
 const double	kMolWtH2O				=	18.01528;

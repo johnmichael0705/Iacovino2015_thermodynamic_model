@@ -16,46 +16,25 @@ void		model();
 
 
 
-extern BasaniteMeltInclusion	DVDP3_295_average;
-extern BasaniteMeltInclusion	DVDP3_295a;
-extern BasaniteMeltInclusion	DVDP3_295b;
-extern BasaniteMeltInclusion	DVDP3_295c;
-extern BasaniteMeltInclusion	DVDP3_295d;
-extern BasaniteMeltInclusion	DVDP3_295g;
-extern BasaniteMeltInclusion	DVDP3_295i;
-extern BasaniteMeltInclusion	DVDP3_295j;
-extern BasaniteMeltInclusion	DVDP3_295l;
-extern BasaniteMeltInclusion	DVDP3_295q;
-extern BasaniteMeltInclusion	DVDP3_295r;
+extern BasaniteMeltInclusion	CN_deep_average;
+extern BasaniteMeltInclusion	CN1_99c_MI1;
+extern BasaniteMeltInclusion	CN1_99G_MI1;
+extern BasaniteMeltInclusion	CN2_MI99J;
+extern BasaniteMeltInclusion	CN2_MI99J2;
+extern BasaniteMeltInclusion	CN2_MI99N;
 
-extern MeltInclusion			Intermediate_avg;
-extern MeltInclusion			tp97009b;
-extern MeltInclusion			tp97009d;
-extern MeltInclusion			tp97009e;
-extern MeltInclusion			tp97009g;
-extern MeltInclusion			tp97010b;
-extern MeltInclusion			tp97010d;
-extern MeltInclusion			tp97011a;
-extern MeltInclusion			aw82033c;
-extern MeltInclusion			aw82033e;
-extern MeltInclusion			aw82033i;
+extern MeltInclusion			CN_shallow_avg;
+extern MeltInclusion			LP30_MI;
+extern MeltInclusion			LP34_MI;
+extern MeltInclusion			LP51_MI;
+extern MeltInclusion			LP51_MI1B;
+extern MeltInclusion			LP52_MI1;
+extern MeltInclusion			LP53_MI1;
+extern MeltInclusion			LP54_MI1;
+extern MeltInclusion			LP55_MI2;
+extern MeltInclusion			LP55_MI1;
+extern MeltInclusion			LP56_MI1;
 
-extern MeltInclusion			EA1_avg;
-extern MeltInclusion			EA1_a;
-extern MeltInclusion			EA1_b;
-extern MeltInclusion			EA1_d;
-extern MeltInclusion			EA1_e;
-extern MeltInclusion			EA1_f;
-extern MeltInclusion			EA1_g;
-extern MeltInclusion			EA1_h;
-extern MeltInclusion			EA1_i;
-extern MeltInclusion			EA1_j;
-extern MeltInclusion			EA1_k;
-
-extern MeltInclusion			LL_Phon_8;
-
-extern BasaniteMeltInclusion	deltaBasToTeph;
-extern MeltInclusion			deltaTephToPhon;
-extern MeltInclusion			deltaPhonToLL;
+extern BasaniteMeltInclusion	deltaDeepToShallow;
 
 #endif /* defined(__Iacovino__Model__) */

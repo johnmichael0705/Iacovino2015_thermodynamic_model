@@ -32,37 +32,27 @@ fS2(double inA, double inB, double inC, double inD, double inE, double inG, doub
 @implementation KaylaTests
 
 
-- (void)
+- (void) //Click here to test the model with mixer
 testModel
 {
 	initModel();
 	model();
 }
 
-- (void)
+- (void) //Click here to test the thermodynamic model, without the mixer. Outputs high P and low P calculated gas comps.
 testAverageHighAndLowPressure
 {
 	initModel();
 	
 #if 0
-	DVDP3_295_average.calcComposition();
-	Intermediate_avg.calcComposition();
-	EA1_avg.calcComposition();
-	LL_Phon_8.calcComposition();
+	CN_deep_average.calcComposition();
+	CN_shallow_avg.calcComposition();
 	
-	WeightPercents bas(0.5537, 1.498, 0.21662);
-    WeightPercents teph(0.1594, 0.34, 0.0662); //comp(CO2, H2O, S) values in wt%
-	WeightPercents phon(0.0691, 0.167, 0.03805);
-	WeightPercents ll(0.03, 0.11, 0.0);
+	WeightPercents deep(0.079, 3.62, 0.12868);
+	WeightPercents shallow(0.079, 3.62, 0.12868);
 	
-	BasaniteMeltInclusion		deltaBasToTeph(DVDP3_295_average);
-	deltaBasToTeph.calcDeltaComposition(bas, kBasFrac, teph);
-	
-	MeltInclusion				deltaTephToPhon(Intermediate_avg);
-	deltaTephToPhon.calcDeltaComposition(teph, kTephFrac, phon);
-	
-	MeltInclusion				deltaPhonToLL(EA1_avg);
-	deltaPhonToLL.calcDeltaComposition(phon, kPhonFrac, ll);
+	BasaniteMeltInclusion		deltaDeepToShallow(CN_deep_average);
+	deltaDeepToShallow.calcDeltaComposition(deep, kBasFrac, shallow);
 #endif
 
 	//	High pressure…
@@ -70,47 +60,26 @@ testAverageHighAndLowPressure
 	std::printf("\n\n%-20.20s  %13.13s  %13.13s  %13.13s  %13.13s  %13.13s\n", "Region (high press)", "CO", "CO2", "H2O", "H2S", "SO2");
 	std::printf("%20.20s  %13.13s  %13.13s  %13.13s  %13.13s  %13.13s\n", "--------------------", "--------", "--------", "--------", "--------", "--------");
 	
-	outputMeltData(DVDP3_295a, "DVDP3_295a");
-	outputMeltData(DVDP3_295b, "DVDP3_295b");
-	outputMeltData(DVDP3_295c, "DVDP3_295c");
-	outputMeltData(DVDP3_295d, "DVDP3_295d");
-	outputMeltData(DVDP3_295g, "DVDP3_295g");
-	outputMeltData(DVDP3_295i, "DVDP3_295i");
-	outputMeltData(DVDP3_295j, "DVDP3_295j");
-	outputMeltData(DVDP3_295l, "DVDP3_295l");
-	outputMeltData(DVDP3_295q, "DVDP3_295q");
-	outputMeltData(DVDP3_295r, "DVDP3_295r");
-	outputMeltData(DVDP3_295_average, "DVDP3_295_average");
+	outputMeltData(CN1_99c_MI1, "CN1_99c_MI1");
+	outputMeltData(CN1_99G_MI1, "CN1_99G_MI1");
+	outputMeltData(CN2_MI99J, "CN2_MI99J");
+	outputMeltData(CN2_MI99J2, "CN2_MI99J2");
+	outputMeltData(CN2_MI99N, "CN2_MI99N");
+	outputMeltData(CN_deep_average, "CN_deep_average");
 	
-	outputMeltData(tp97009b, "tp97009b");
-	outputMeltData(tp97009d, "tp97009d");
-	outputMeltData(tp97009e, "tp97009e");
-	outputMeltData(tp97009g, "tp97009g");
-	outputMeltData(tp97010b, "tp97010b");
-	outputMeltData(tp97010d, "tp97010d");
-	outputMeltData(tp97011a, "tp97011a");
-	outputMeltData(aw82033c, "aw82033c");
-	outputMeltData(aw82033e, "aw82033e");
-	outputMeltData(aw82033i, "aw82033i");
-	outputMeltData(Intermediate_avg, "Intermediate_avg");
+	outputMeltData(LP30_MI, "LP30_MI");
+	outputMeltData(LP34_MI, "LP34_MI");
+	outputMeltData(LP51_MI, "LP51_MI");
+	outputMeltData(LP51_MI1B, "LP51_MI1B");
+	outputMeltData(LP52_MI1, "LP52_MI1");
+	outputMeltData(LP53_MI1, "LP53_MI1");
+	outputMeltData(LP54_MI1, "LP54_MI1");
+	outputMeltData(LP55_MI2, "LP55_MI2");
+	outputMeltData(LP55_MI1, "LP55_MI1");
+	outputMeltData(LP56_MI1, "LP56_MI1");
+	outputMeltData(CN_shallow_avg, "CN_shallow_avg");
 	
-	outputMeltData(EA1_a, "EA1_a");
-	outputMeltData(EA1_b, "EA1_b");
-	outputMeltData(EA1_d, "EA1_d");
-	outputMeltData(EA1_e, "EA1_e");
-	outputMeltData(EA1_f, "EA1_f");
-	outputMeltData(EA1_g, "EA1_g");
-	outputMeltData(EA1_h, "EA1_h");
-	outputMeltData(EA1_i, "EA1_i");
-	outputMeltData(EA1_j, "EA1_j");
-	outputMeltData(EA1_k, "EA1_k");
-	outputMeltData(EA1_avg, "EA1_avg");
-	
-	outputMeltData(LL_Phon_8, "LL_Phon_8");
-	
-	outputMeltData(deltaBasToTeph, "deltaBasToTeph");
-	outputMeltData(deltaTephToPhon, "deltaTephToPhon");
-	outputMeltData(deltaPhonToLL, "deltaPhonToLL");
+	outputMeltData(deltaDeepToShallow, "deltaDeepToShallow");
 	
 	//	Low pressure…
 	
@@ -119,14 +88,12 @@ testAverageHighAndLowPressure
 	
 	double pressure = 1.0;
 	
-	outputLowMeltData(pressure, LL_Phon_8, "LL_Phon_8");
-	outputLowMeltData(pressure, EA1_avg, "EA1_avg");
-	outputLowMeltData(pressure, Intermediate_avg, "Intermediate_avg");
-	outputLowMeltData(pressure, DVDP3_295_average, "DVDP3_295_average");
-	outputLowMeltData(pressure, deltaPhonToLL, "deltaPhonToLL");
-	outputLowMeltData(pressure, deltaTephToPhon, "deltaTephToPhon");
-	outputLowMeltData(pressure, deltaBasToTeph, "deltaBasToTeph");
+	outputLowMeltData(pressure, CN_shallow_avg, "CN_shallow_avg");
+	outputLowMeltData(pressure, CN_deep_average, "CN_deep_average");
+	outputLowMeltData(pressure, deltaDeepToShallow, "deltaDeepToShallow");
 	
+	// #TODO: Also output what the fractionation factor(s) is...
+	// Currently kBasFrac etc are constants defined in MeltInclusion.h
 	
 	std::printf("\n\n");
 }
@@ -150,8 +117,6 @@ outputLowMeltData(double inPressure, const MeltInclusion& inMelt, const char* in
 	inMelt.depressurize(inPressure, co, co2, h2o, h2s, so2);
 	std::printf("%-20.20s  %13.2f  %13.2f  %13.2f  %13.8f  %13.5f\n", inName, co*100, co2*100, h2o*100, h2s*100, so2*100);
 }
-
-
 
 
 
@@ -195,24 +160,24 @@ testSMMix
 	sm.add(0.0, 15.45/100.0, 80.04/100.0, 2.22/100.0, 2.29/100.0);
 	sm.add(0.0, 16.95/100.0, 60.38/100.0, 10.61/100.0, 12.06/100.0);
 	
-	double co2 = sm.getVals(0, 100, 0, 0, 0, 0, 0, sm.mCO2Vals);
+	double co2 = sm.getVals(0, 100, 0, sm.mCO2Vals);
 	XCTAssertEqualWithAccuracy(co2, 98.409996, 0.00001);
-	co2 = sm.getVals(0, 99, 1, 0, 0, 0, 0, sm.mCO2Vals);
+	co2 = sm.getVals(0, 99, 1, sm.mCO2Vals);
 	XCTAssertEqualWithAccuracy(co2, 98.3001937, 0.00001);
 	
-	double h2o = sm.getVals(0, 29, 0, 1, 67, 2, 1, sm.mH2OVals);
+	double h2o = sm.getVals(0, 29, 0, sm.mH2OVals);
 	XCTAssertEqualWithAccuracy(h2o, 60.3824959, 0.00001);
-	h2o = sm.getVals(25, 4, 0, 0, 66, 0, 5, sm.mH2OVals);
+	h2o = sm.getVals(25, 4, 0, sm.mH2OVals);
 	XCTAssertEqualWithAccuracy(h2o, 59.6078987, 0.00001);
 	
-	double h2s = sm.getVals(26, 1, 2, 1, 70, 0, 0, sm.mH2SVals);
+	double h2s = sm.getVals(26, 1, 2, sm.mH2SVals);
 	XCTAssertEqualWithAccuracy(h2s, 0.060999997, 0.00001);
-	h2s = sm.getVals(0, 28, 2, 0, 70, 0, 0, sm.mH2SVals);
+	h2s = sm.getVals(0, 28, 2, sm.mH2SVals);
 	XCTAssertEqualWithAccuracy(h2s, 0.0667999983, 0.00001);
 	
-	double so2 = sm.getVals(25, 4, 0, 0, 63, 8, 0, sm.mSO2Vals);
+	double so2 = sm.getVals(25, 4, 0, sm.mSO2Vals);
 	XCTAssertEqualWithAccuracy(so2, 1.36759996, 0.00001);
-	so2 = sm.getVals(0, 28, 2, 0, 70, 0, 0, sm.mSO2Vals);
+	so2 = sm.getVals(0, 28, 2, sm.mSO2Vals);
 	XCTAssertEqualWithAccuracy(so2, 1.46039999, 0.00001);
 }
 
@@ -228,7 +193,7 @@ testOldMixer
 - (void)
 testAltMolFractionsDV
 {
-	BasaniteDissolvedVolatiles	DVDP3_295_avg_DV(1100, 5000, 2.52356903, -7.63, 0.9299, 0.5537, 1.498, 0.21662);
+	BasaniteDissolvedVolatiles	DVDP3_295_avg_DV(1170, 2400, 3.139857745, -7.70, 0.371, 0.079, 3.62, 0.12868);
 	
 	DVDP3_295_avg_DV.molPercentToTeph()
 	
@@ -246,7 +211,7 @@ testAltMolFractionsDV
 - (void)
 testAltMolFractions
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.11, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	double co, co2, h2o, h2s, so2;
@@ -262,7 +227,7 @@ testAltMolFractions
 - (void)
 testLowPhonolite
 {
-	MeltInclusion	EA1_a(1000, 2534, std::log10(3.65685507), -11.26, -2.7);
+	MeltInclusion	EA1_a(1170, 2400, std::log10(3.139857745), -6.82, -2.7);
 	EA1_a.calcComposition();
 	
 	double co, co2, h2o, h2s, so2;
@@ -277,7 +242,7 @@ testLowPhonolite
 - (void)
 testLowBasanite
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.11, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	double co, co2, h2o, h2s, so2;
@@ -292,7 +257,7 @@ testLowBasanite
 - (void)
 testAltFS2
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.11, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	
@@ -308,7 +273,7 @@ testAltFS2
 - (void)
 testAltFH2
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.11, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	double fLow = DVDP3_295a.fH2(1.0);
@@ -323,7 +288,7 @@ testAltFH2
 - (void)
 testAltFO2
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.11, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	double fLow = DVDP3_295a.fO2(1.0);
@@ -337,7 +302,7 @@ testAltFO2
 - (void)
 testDissolvedVolatiles
 {
-	MeltInclusion	EA1_avg(1000, 2671.3, 0.60650829, -11.26, -2.7);//, 0.0691, 0.167, 0.03805);
+	MeltInclusion	EA1_avg(1170, 2400, 0.4969020, -7.70, -2.7);//, 0.0691, 0.167, 0.03805);
 	EA1_avg.calcComposition();
 	
 	XCTAssertEqualWithAccuracy(EA1_avg.KFCO2(), 11609339.6907, 0.0001);
@@ -366,9 +331,9 @@ testDissolvedVolatiles
 	XCTAssertEqualWithAccuracy(EA1_avg.DSO2(), 0.257440617865, 0.0001);
 #endif
 	
-	BasaniteMeltInclusion		DVDP3_295_avg(1100, 5000, 2.52356903, -7.63, 0.9299);
+	BasaniteMeltInclusion		DVDP3_295_avg(1170, 2400, 3.1396, -7.70, 0.371);
 	DVDP3_295_avg.calcComposition();
-	MeltInclusion				T97009_avg(1081, 3000, 1.685047, -9.99, -3.01);
+	MeltInclusion				T97009_avg(1130, 1300, 2.4736, -8.21, -3.01);
 	T97009_avg.calcComposition();
 	
 #if 0
@@ -395,8 +360,8 @@ testDissolvedVolatiles
 	
 	//	Bas -> Teph
 	
-	WeightPercents bas(0.5537, 1.498, 0.21662);
-	WeightPercents teph(0.2422, 0.527, 0.067);
+	WeightPercents bas(0.079, 3.62, 0.12868);
+	WeightPercents teph(0.068, 1.45, 0.05057);
 	DVDP3_295_avg.calcDeltaComposition(bas, kBasFrac, teph);
 	
 	double co, co2, h2o, h2s, so2;
@@ -424,11 +389,11 @@ testDissolvedVolatiles
 - (void)
 testEvolution
 {
-	BasaniteMeltInclusion		DVDP3_295_avg(1100, 5000, 2.52356903, -7.63, 0.9299);
+	BasaniteMeltInclusion		DVDP3_295_avg(1170, 2400, 3.1396, -7.70, 0.371);
 	BasaniteMeltInclusion		DVDP3_295_evolved(DVDP3_295_avg);
 	
-	WeightPercents bas(0.5537, 1.498, 0.21662);
-	WeightPercents teph(0.2422, 0.527, 0.067);
+	WeightPercents bas(0.079, 3.62, 0.12868);
+	WeightPercents teph(0.068, 1.45, 0.05057);
 	DVDP3_295_evolved.calcDeltaComposition(bas, kBasFrac, teph);
 	
 	
@@ -460,7 +425,7 @@ testEvolution
 - (void)
 testMolFractions
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.1094, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	double XH2 = DVDP3_295a.molFractionH2();
@@ -479,10 +444,10 @@ testMolFractions
 - (void)
 testFS2
 {
-	double t = 1100;
-	double p = 5000;
-	double fO2 = std::pow(10, -7.63);
-	double fH2O = std::pow(10, 2.601099);
+	double t = 1170;
+	double p = 2400;
+	double fO2 = std::pow(10, -7.70);
+	double fH2O = std::pow(10, 3.1396);
 	
 	double tK = t + 273.15;
 	
@@ -533,7 +498,7 @@ testFS2
 - (void)
 testPhonolite
 {
-	MeltInclusion				EA1_a(1000, 2534, std::log10(3.65685507), -11.26, -2.7);
+	MeltInclusion				EA1_a(1170, 2400, std::log10(3.1398), -6.82, -2.7);
 	EA1_a.calcComposition();
 	
 	XCTAssertEqualWithAccuracy(EA1_a.KFCO2(), 11609339.6907, 0.0001);
@@ -580,7 +545,7 @@ testPhonolite
 - (void)
 testBasanite
 {
-	BasaniteMeltInclusion		DVDP3_295a(1100, 5000, 2.60, -7.63, 0.925);
+	BasaniteMeltInclusion		DVDP3_295a(1170, 2400, 3.1094, -6.82, 0.498);
 	DVDP3_295a.calcComposition();
 	
 	double PCO = DVDP3_295a.PCO();
@@ -623,7 +588,7 @@ testBasaniteNaN
 - (void)
 testXH2
 {
-	MeltInclusion				EA1_a(1000, 2534, std::log10(3.65685507), -11.26, -2.7);
+	MeltInclusion				EA1_a(1170, 2400, std::log10(3.1398), -6.82, -2.7);
 	EA1_a.calcComposition();
 	XCTAssertEqualWithAccuracy(EA1_a.molFractionH2(), 2.31960911277e-05, 0.0001e-5);
 }

@@ -32,15 +32,11 @@ public:
 
 //protected:
 	double
-	getVals(int a, int b, int c, int d, int e, int f, int g, const std::vector<MixValT>& inV) const
+	getVals(int a, int b, int c, const std::vector<MixValT>& inV) const
 	{
 		return		a * inV[0]
 				+	b * inV[1]
-				+	c * inV[2]
-				+	d * inV[3]
-				+	e * inV[4]
-				+	f * inV[5]
-				+	g * inV[6];
+				+	c * inV[2];
 	}
 	
 	void					dumpLine(const std::vector<MixValT>& inV) const;
